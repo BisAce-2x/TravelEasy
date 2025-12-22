@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FlyAway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <img id="main-logo" src="logo.png" alt="FlyAway Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="#">Destinations</a></li>
+        </ul>
+        <div id="auth-buttons">
+            <button class="secondary-btn">Log In</button>
+            <button class="primary-btn">Sign Up</button>
+        </div>
+    </nav>
+
+    <section id="about-hero">
+        <img src="contact_us.png" alt="About Us Hero" class="about-hero-img">
+        <h1 style="color: black; font-size: 40px; font-weight: bold;">Contact Us</h1>
+    </section>
+
+    <section id="contact-container">
+    <div id="contact-content">
+        <div id="contact-info">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="intro-text">
+                We're here to help! Whether you have questions about bookings, need travel assistance, or just want to learn more about FlyAway, our team is ready to assist you. Reach out to us anytime, and we'll ensure you have a smooth and hassle-free travel experience.
+            </p>
+
+            <div class="info-group">
+                <h3>Customer Support Hours</h3>
+                <p>Monday – Friday: 9 AM – 6 PM</p>
+                <p>Saturday – Sunday: 10 AM – 4 PM</p>
+            </div>
+
+            <div class="info-group">
+                <h3>Contact Details</h3>
+                <div class="contact-item">
+                    <div class="icon-circle"><i class="fi fi-ts-marker"></i></div>
+                    <div>
+                        <strong>Address</strong><br>
+                        Kalanki, Kathmandu
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-circle"><i class="fi fi-ts-phone-call"></i></div>
+                    <div>
+                        <strong>Phone Number</strong><br>
+                        9861XXXXXX, 9861XXXXXX
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon-circle"><i class="fi fi-ts-envelope"></i></div>
+                    <div>
+                        <strong>Email</strong><br>
+                        support@flyaway.com
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-group">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="FB"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="IG"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" alt="X"></a>
+                    <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-form-container">
+            <form id="contact-form">
+                <h2>Message</h2>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Your Message" rows="8"></textarea>
+                <button type="submit" class="tert-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+<section id="map-section">
+    <div class="map-container">
+        <h2 class="map-title">Find Us on the Map</h2>
+        <p class="map-description">
+            Easily locate our office and visit us for any assistance. Use the map below to get directions and plan your visit hassle-free.
+        </p>
+        <div id="map-frame">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14131.02677112443!2d85.27189914717173!3d27.69311496660144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb187a97f390b1%3A0xec3f47092df0d4ca!2sKalanki%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1700000000000!5m2!1sen!2snp" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div id="footer-grid">
+            <div id="fg-left">
+                <img src="logo.png" alt="">
+                <p>About FlyAway</p>
+                <p>FlyAway is your trusted travel partner, making every journey seamless, affordable, and unforgettable.</p>
+            </div>
+            <div id="fg-mid">
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="#">Destinations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Help & Support</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cancellations & Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="fg-right">
+                <p>Subscribe to our Newsletter</p>
+                <div>
+                    <input type="text" placeholder="Your Email">
+                    <button class="tert-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p id="copyrights">2025 FlyAway | Designed by Gaurav Kumar Shiwakoti</p>
+    </footer>
+</body>
+</html>
