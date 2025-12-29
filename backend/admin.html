@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+      <div id="login-section" class="admininput" style="margin: 100px; border: 1px solid black; border-radius: 20px; background-color: white; padding: 30px; width: 325px;">
+        <h2>Admin Login</h2><br>
+        <input type="text" id="username" placeholder="Username"><br><br>       
+        <input type="password" id="password" placeholder="Password"><br><br>
+        <button id="login-btn" class="primary-btn">Login</button>
+        <p id="login-error" style="color:red"></p>
+      </div>
+
+      <div id="admin-section" class="admininput" style="display:none; margin: 50px;">
+        <form id="destForm" style="margin-bottom: 50px;">
+          <input type="text" placeholder="City" id="city">
+          <input type="text" placeholder="Country" id="country">
+          <input type="text" placeholder="Category" id="category">
+          <input type="text" placeholder="Image URL" id="image">
+          <button class="primary-btn">Add Destination</button>
+        </form>
+
+        <div id="destList"></div>
+      </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

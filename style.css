@@ -93,7 +93,7 @@ nav li a:hover{
     grid-template-columns:1fr 1fr;
     gap: 100px;
     place-items: center;
-    background-image: url('hero_section.png');
+    background-image: url('../media-files/hero_section.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -144,22 +144,33 @@ nav li a:hover{
 }
 
 .title-text{
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#partner-images{
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 150px;
+.partner-logos {
+    margin: 0px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
 }
 
-.part-logo{
-    height:50px;
-    aspect-ratio: 7/2;
-    width: auto;
+.partner-logo {
+  width: 140px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 #popular-destinations{
@@ -206,6 +217,7 @@ nav li a:hover{
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    background-color:#EBEBEC ;
 }
 
 .pd-img{
@@ -249,7 +261,7 @@ nav li a:hover{
 #why-select-us{
     padding:0 150px;
     margin-top: 150px;
-    background-image: url(airplane_vector.png);
+    background-image: url(../media-files/airplane_vector.png);
     background-repeat: no-repeat;
     box-sizing: border-box;
     background-position: left;
@@ -291,7 +303,7 @@ nav li a:hover{
 #testimonials{
     padding-bottom: 150px;
     margin-top: 200px;
-    background-image: url(review_section.png);
+    background-image: url(../media-files/review_section.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -674,4 +686,11 @@ video{
 
 #map-frame iframe {
     display: block;
+}
+
+.admininput input{
+    padding: 10px 100px 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
 }

@@ -1,218 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fly Away</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
-        <img id="main-logo" src="logo.png" alt="">
+        <img id="main-logo" src="../media-files/logo.png" alt="">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact_us.html">Contact Us</a></li>
             <li><a href="#">Destinations</a></li>
         </ul>
         <div id="auth-buttons">
-        <button class="secondary-btn">Log In</button>
-        <button class="primary-btn">Sign Up</button>
-        </div>    
+            <button class="secondary-btn">Log In</button>
+            <button class="primary-btn">Sign Up</button>
+        </div>
     </nav>
 
     <section id="hero-section">
         <div id="hero-left">
             <h1>Where Will Your <span>Next Journey </span>Take You?</h1>
-            <p>Why stay in one place when the world is full of wonders? Discover new destinations, embrace different cultures, and immerse yourself in once in a lifetime experiences that will leave you inspired and fulfilled.</p>
+            <p>Why stay in one place when the world is full of wonders? Discover new destinations, embrace different
+                cultures, and immerse yourself in once in a lifetime experiences that will leave you inspired and
+                fulfilled.</p>
             <button class="tert-btn">Start Your Journey</button>
         </div>
         <div id="hero-right">
             <div id="h-img-1">
-            <img src="https://images.pexels.com/photos/1374064/pexels-photo-1374064.jpeg?cs=srgb&dl=pexels-julieaagaard-1374064.jpg&fm=jpg" alt="" class="hero-img">
+                <img src="https://images.pexels.com/photos/1374064/pexels-photo-1374064.jpeg?cs=srgb&dl=pexels-julieaagaard-1374064.jpg&fm=jpg"
+                    alt="" class="hero-img">
             </div>
             <div id="h-img-2">
-            <img src="https://images.pexels.com/photos/1374064/pexels-photo-1374064.jpeg?cs=srgb&dl=pexels-julieaagaard-1374064.jpg&fm=jpg" alt="" class="hero-img">
+                <img src="https://imgcap.capturetheatlas.com/wp-content/uploads/2020/10/flatiron-building-que-visitar-en-nueva-york.jpg"
+                    alt="" class="hero-img">
             </div>
             <div id="h-img-3">
-            <img src="https://images.pexels.com/photos/1374064/pexels-photo-1374064.jpeg?cs=srgb&dl=pexels-julieaagaard-1374064.jpg&fm=jpg" alt="" class="hero-img">
-            </div>    
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/1200px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+                    alt="" class="hero-img">
+            </div>
         </div>
     </section>
 
-    <section id="partner">
-        <h1 class="title-text">Partnered with the Best</h1>
-        <div id="partner-images">
-            <img src="logo.png" alt="" class="part-logo">
-            <img src="logo.png" alt="" class="part-logo">
-            <img src="logo.png" alt="" class="part-logo">
-            <img src="logo.png" alt="" class="part-logo">
-            <img src="logo.png" alt="" class="part-logo">
-            <img src="logo.png" alt="" class="part-logo">
-        </div>    
-    </section>
+<section id="partner">
+  <h2 class="title-text">Partnered with the Best</h2>
+
+  <div class="partner-logos">
+    <div class="partner-logo">
+      <img src="../media-files/nike.png" alt="Nike">
+    </div>
+    <div class="partner-logo">
+      <img src="../media-files/google.png" alt="YouTube">
+    </div>
+    <div class="partner-logo">
+      <img src="../media-files/disnep.png" alt="Disney">
+    </div>
+    <div class="partner-logo">
+      <img src="../media-files/netflix.png" alt="Netflix">
+    </div>
+    <div class="partner-logo">
+      <img src="../media-files/meta.png" alt="Meta">
+    </div>
+    <div class="partner-logo">
+      <img src="../media-files/codynn.png" alt="Partner">
+    </div>
+  </div>
+</section>
+
 
     <section id="popular-destinations">
-        <h1 id="popular-text">Popular Destinations</h1>
-        <div id="destination-nav">
-            <ul>
-                <li data-filter="all" class="active">Top Picks</li>
-                <li data-filter="asia">Asia</li>
-                <li data-filter="europe">Europe</li>
-                <li data-filter="africa">Africa</li>
-                <li data-filter="north-america">North America</li>
-                <li data-filter="south-america">South America</li>
-                <li data-filter="australia">Australia</li>
-            </ul>
-            <button class="primary-btn">Explore More</button>
-        </div>
-        <div class="pd-cards">
+        <h2 id="popular-text">Popular Destinations</h1>
+            <div id="destination-nav">
+                <ul>
+                    <li data-filter="all" class="active">Top Picks</li>
+                    <li data-filter="asia">Asia</li>
+                    <li data-filter="europe">Europe</li>
+                    <li data-filter="africa">Africa</li>
+                    <li data-filter="north-america">North America</li>
+                    <li data-filter="south-america">South America</li>
+                    <li data-filter="australia">Australia</li>
+                </ul>
+                <button class="primary-btn">Explore More</button>
+            </div>
+            <div class="pd-cards" id="pdCards"></div>
 
-        <div class="pd-card" data-category="asia">
-            <img src="https://www.acethehimalaya.com/wp-content/uploads/2024/09/best-places-to-visit-in-kathmandu.jpg.webp" alt="" class="pd-img">
-            <div class="pd-layout">
-                <div class="pd-city"><p>Kathmandu</p></div>
-                <div class="pd-button"><button class="primary-btn">See More</button></div>
-                <div class="pd-country"><p>Nepal</p></div>
-            </div>
-        </div>
-        
-        <div class="pd-card" data-category="europe">
-            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/15/6d/d6/paris.jpg?w=1400&h=1400&s=1" alt="" class="pd-img">
-            <div class="pd-layout">
-                <div class="pd-city"><p>Paris</p></div>
-                <div class="pd-button"><button class="primary-btn">See More</button></div>
-                <div class="pd-country"><p>France</p></div>
-            </div>
-        </div>
-        
-        <div class="pd-card" data-category="africa">
-            <img src="https://www.shutterstock.com/image-photo/view-cape-town-above-600nw-2568029627.jpg" alt="" class="pd-img">
-            <div class="pd-layout">
-                <div class="pd-city"><p>Cape Town</p></div>
-                <div class="pd-button"><button class="primary-btn">See More</button></div>
-                <div class="pd-country"><p>South Africa</p></div>
-            </div>
-        </div>
-        
-        <div class="pd-card" data-category="north america">
-            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/aa/b1/79/caption.jpg?w=1200&h=-1&s=1" alt="" class="pd-img">
-            <div class="pd-layout">
-                <div class="pd-city"><p>New York</p></div>
-                <div class="pd-button"><button class="primary-btn">See More</button></div>
-                <div class="pd-country"><p>USA</p></div>
-            </div>
-        </div>
 
-        </div>
     </section>
 
     <section id="why-select-us">
-        <h1 class="title-text">Why Choose Us?</h1>
-        <p>At FlyAway, we make travel easy, affordable, and unforgettable. With the best deals, seamless booking, and 24/7 support, your perfect trip starts here!</p>
-        
-        <div id="wsu-cards">
-            <div class="wsu-card">
-                <i class="fi fi-ts-reservation-smartphone"></i>
-                <h2>Hassle-Free Booking</h2>
-                <p>Fast, secure and simple booking in just a free clicks with instant confirmation</p>
+        <h2 class="title-text">Why Choose Us?</h1>
+            <p>At FlyAway, we make travel easy, affordable, and unforgettable. With the best deals, seamless booking,
+                and 24/7 support, your perfect trip starts here!</p>
+
+            <div id="wsu-cards">
+                <div class="wsu-card">
+                    <i class="fi fi-ts-reservation-smartphone"></i>
+                    <h2>Hassle-Free Booking</h2>
+                    <p>Fast, secure and simple booking in just a free clicks with instant confirmation</p>
+                </div>
+                <div class="wsu-card">
+                    <i class="fi fi-ts-shield-check"></i>
+                    <h2>Best Price Guaranteed</h2>
+                    <p>Get the best flight prices with no hidden fees transparent and budget-friendly travel.</p>
+                </div>
+                <div class="wsu-card">
+                    <i class="fi fi-ts-party-horn"></i>
+                    <h2>Exclusive Travel Deals</h2>
+                    <p>Access special discounts and seasonal offers for the best value.</p>
+                </div>
+                <div class="wsu-card">
+                    <i class="fi fi-ts-sack-dollar"></i>
+                    <h2>Hassle-Free Booking</h2>
+                    <p>Fast, secure and simple booking in just a free clicks with instant confirmation</p>
+                </div>
+                <div class="wsu-card">
+                    <i class="fi fi-ts-plane-alt"></i>
+                    <h2>Hassle-Free Booking</h2>
+                    <p>Fly to 100+ destinations worldwide with top rated global airlines.</p>
+                </div>
+                <div class="wsu-card">
+                    <i class="fi fi-ts-phone-flip"></i>
+                    <h2>24/7 Customer Support</h2>
+                    <p>Our team is available 24/7 to assist with bookings, changes, or any travel inquiries.
+                    <p>
+                </div>
             </div>
-            <div class="wsu-card">
-                <i class="fi fi-ts-shield-check"></i>
-                <h2>Best Price Guaranteed</h2>
-                <p>Get the best flight prices with no hidden fees transparent and budget-friendly travel.</p>
-            </div>
-            <div class="wsu-card">
-                <i class="fi fi-ts-party-horn"></i>
-                <h2>Exclusive Travel Deals</h2>
-                <p>Access special discounts and seasonal offers for the best value.</p>
-            </div>
-            <div class="wsu-card">
-                <i class="fi fi-ts-sack-dollar"></i>
-                <h2>Hassle-Free Booking</h2>
-                <p>Fast, secure and simple booking in just a free clicks with instant confirmation</p>
-            </div>
-            <div class="wsu-card">
-                <i class="fi fi-ts-plane-alt"></i>
-                <h2>Hassle-Free Booking</h2>
-                <p>Fly to 100+ destinations worldwide with top rated global airlines.</p>
-            </div>
-            <div class="wsu-card">
-                <i class="fi fi-ts-phone-flip"></i>
-                <h2>24/7 Customer Support</h2>
-                <p>Our team is available 24/7 to assist with bookings, changes, or any travel inquiries.<p>
-            </div>
-        </div>
     </section>
     <section id="testimonials">
-        <h1 class="title-text">What Our Travelers Say</h1>
-        <p>At FlyAway, we take pride in delivering seamless travel experiences. Our customers lvoe our easy booking, great deals, and 24/7 support. Whether it's and adventure, a relaxing getaway, or a dream vacation, we make every journey unforgettable!</p>
-        
+        <h2 class="title-text">What Our Travelers Say</h1>
+            <p>At FlyAway, we take pride in delivering seamless travel experiences. Our customers lvoe our easy booking,
+                great deals, and 24/7 support. Whether it's and adventure, a relaxing getaway, or a dream vacation, we
+                make every journey unforgettable!</p>
 
-        <div id="testi-cards">
-        <div id="testi-card">
-            <div class="testi-left">
-                <img src="https://media.cntraveller.com/photos/61bb62ce9a26829b0f14b36f/16:9/w_2560%2Cc_limit/shutterstock_442054726.jpg" 
-                    alt="" class="testi-img">
-        </div>
 
-            <div class="testi-right">
-                <div class="testi-pname">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDFEPgAIXA0-oJhhCnA8SLtiiggUpOOSPn_w&s" 
-                        alt="" class="testi-person">
-                    <h3>John Doe</h3>
-                </div>
-
-                <div class="ratings">
-                    <i class="fi fi-ts-star"></i>
-                    <i class="fi fi-ts-star"></i>
-                    <i class="fi fi-ts-star"></i>
-                    <i class="fi fi-ts-star"></i>
-                    <i class="fi fi-ts-star"></i>
-                </div>
-
-                <p class="testi-p">
-                    “FlyAway made my trip stress free! Easy booking and top notch support.”
-                </p>
-                <p class="location">Alberta, Canada</p>
-            </div>
-        </div>
+            <div id="testi-cards">
                 <div id="testi-card">
-            <div class="testi-left">
-                <img src="https://avgtravels.com/au/wp-content/uploads/sites/4/Cherry-Blossoms-Japan-AVG-Travels-scaled.jpg" 
-                    alt="" class="testi-img">
-        </div>
+                    <div class="testi-left">
+                        <img src="https://media.cntraveller.com/photos/61bb62ce9a26829b0f14b36f/16:9/w_2560%2Cc_limit/shutterstock_442054726.jpg"
+                            alt="" class="testi-img">
+                    </div>
 
-            <div class="testi-right">
-                <div class="testi-pname">
-                    <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/202391.png" 
-                        alt="" class="testi-person">
-                    <h3>Jermy Linn</h3>
+                    <div class="testi-right">
+                        <div class="testi-pname">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDFEPgAIXA0-oJhhCnA8SLtiiggUpOOSPn_w&s"
+                                alt="" class="testi-person">
+                            <h3>John Doe</h3>
+                        </div>
+
+                        <div class="ratings">
+                            <i class="fi fi-ts-star"></i>
+                            <i class="fi fi-ts-star"></i>
+                            <i class="fi fi-ts-star"></i>
+                            <i class="fi fi-ts-star"></i>
+                            <i class="fi fi-ts-star"></i>
+                        </div>
+
+                        <p class="testi-p">
+                            “FlyAway made my trip stress free! Easy booking and top notch support.”
+                        </p>
+                        <p class="location">Alberta, Canada</p>
+                    </div>
                 </div>
+                <div id="testi-card">
+                    <div class="testi-left">
+                        <img src="https://avgtravels.com/au/wp-content/uploads/sites/4/Cherry-Blossoms-Japan-AVG-Travels-scaled.jpg"
+                            alt="" class="testi-img">
+                    </div>
 
-                <div class="ratings">
-                    <i class="fi fi-ts-star"></i>
-                    <i class="fi fi-ts-star"></i>
-                    <i class="fi fi-ts-star"></i>
-                    <i class="fi fi-ts-star"></i>
-                    <i class="fi fi-ts-star"></i>
+                    <div class="testi-right">
+                        <div class="testi-pname">
+                            <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/202391.png" alt=""
+                                class="testi-person">
+                            <h3>Jermy Linn</h3>
+                        </div>
+
+                        <div class="ratings">
+                            <i class="fi fi-ts-star"></i>
+                            <i class="fi fi-ts-star"></i>
+                            <i class="fi fi-ts-star"></i>
+                            <i class="fi fi-ts-star"></i>
+                            <i class="fi fi-ts-star"></i>
+                        </div>
+
+                        <p class="testi-p">
+                            “FlyAway made my trip stress free! Easy booking and top notch support.”
+                        </p>
+                        <p class="location">New Delhi, India</p>
+                    </div>
                 </div>
-
-                <p class="testi-p">
-                    “FlyAway made my trip stress free! Easy booking and top notch support.”
-                </p>
-                <p class="location">New Delhi, India</p>
             </div>
-        </div>
-        </div>
     </section>
 
-       <footer>
+    <footer>
         <div id="footer-grid">
             <div id="fg-left">
                 <img src="logo.png" alt="">
                 <p>About FlyAway</p>
-                <p>FlyAway is your trusted travel partner, making every journey seamless, affordable, and unforgettable.</p>
+                <p>FlyAway is your trusted travel partner, making every journey seamless, affordable, and unforgettable.
+                </p>
             </div>
             <div id="fg-mid">
                 <div>
@@ -247,4 +237,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
