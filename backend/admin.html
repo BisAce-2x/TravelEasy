@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    
       <div id="login-section" class="admininput" style="margin: 100px; border: 1px solid black; border-radius: 20px; background-color: white; padding: 30px; width: 325px;">
         <h2>Admin Login</h2><br>
         <input type="text" id="username" placeholder="Username"><br><br>       
@@ -17,6 +16,7 @@
       </div>
 
       <div id="admin-section" class="admininput" style="display:none; margin: 50px;">
+        <h2 class="title-text">Popular Destinations</h2>
         <form id="destForm" style="margin-bottom: 50px;">
           <input type="text" placeholder="City" id="city">
           <input type="text" placeholder="Country" id="country">
@@ -26,7 +26,28 @@
         </form>
 
         <div id="destList"></div>
+      <h2 class="title-text">Partners</h2>
+      <input type="text" id="partnerName" placeholder="Partner name">
+      <input type="text" id="partnerLogo" placeholder="Logo URL">
+      <button onclick="addPartner()" class="primary-btn">Add Partner</button>
+
+      <div id="partnerList"></div>
+
+      <h2 class="title-text">Why Choose Us Cards</h2>
+
+
+      <form id="wsuForm">
+        <input type="text" placeholder="Icon class" id="wsuIcon">
+        <input type="text" placeholder="Title" id="wsuTitle">
+        <textarea placeholder="Description" id="wsuDesc" style="width: 100%; min-height: 80px; padding: 8px 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; resize: vertical; box-sizing: box;margin-bottom: 10px;"></textarea>
+        <button type="submit" id="wsuSubmitBtn" class="primary-btn">Add Card</button>
+      </form>
+
+      <div id="wsuList"></div>
+
       </div>
+
+
 
     <script src="admin.js"></script>
 </body>

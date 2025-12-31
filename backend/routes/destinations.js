@@ -2,49 +2,72 @@ const express = require("express");
 const router = express.Router();
 const Destination = require("../models/Destination");
 
-// creating new destination
-router.post("/", async (req, res) => {
-  const destination = new Destination(req.body);
-  await destination.save();
-  res.json(destination);
+router.post("/", async (req, res, next) => {
+  try {
+    const destination = await new Destination(req.body).save();
+    res.status(201).json(destination);
+  } catch (err) {
+    next(err);
+  }
 });
 
-// reading all data
-router.get("/", async (req, res) => {
+router.get("/", async (req, res, next) => {
   try {
     const destinations = await Destination.find();
     res.json(destinations);
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    next(err);
   }
 });
 
-
-// updating destinations
-router.put("/:id", async (req, res) => {
-  const updated = await Destination.findByIdAndUpdate(
-    req.params.id,
-    req.body,
-    { new: true }
-  );
-  res.json(updated);
-});
-
-// Get a single destination by ID
-router.get("/:id", async (req, res) => {
+router.get("/:id", async (req, res, next) => {
   try {
     const destination = await Destination.findById(req.params.id);
-    if (!destination) return res.status(404).json({ message: "Not found" });
+    if (!destination) {
+      const error = new Error("Destination not found");
+      error.statusCode = 404;
+      throw error;
+    }
     res.json(destination);
   } catch (err) {
-    res.status(500).json({ message: err.message });
+    next(err);
   }
 });
 
-// deleting destinations
-router.delete("/:id", async (req, res) => {
-  await Destination.findByIdAndDelete(req.params.id);
-  res.json({ message: "Deleted successfully" });
+router.put("/:id", async (req, res, next) => {
+  try {
+    const updated = await Destination.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      { new: true }
+    );
+
+    if (!updated) {
+      const error = new Error("Destination not found");
+      error.statusCode = 404;
+      throw error;
+    }
+
+    res.json(updated);
+  } catch (err) {
+    next(err);
+  }
+});
+
+router.delete("/:id", async (req, res, next) => {
+  try {
+    const deleted = await Destination.findByIdAndDelete(req.params.id);
+
+    if (!deleted) {
+      const error = new Error("Destination not found");
+      error.statusCode = 404;
+      throw error;
+    }
+
+    res.json({ message: "Deleted successfully" });
+  } catch (err) {
+    next(err);
+  }
 });
 
 module.exports = router;
